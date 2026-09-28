@@ -1,0 +1,132 @@
+[
+  {
+    "id": "google-bert/bert-base-uncased",
+    "pipeline_tag": "fill-mask",
+    "library_name": "transformers",
+    "downloads": 41700000,
+    "likes": 3381,
+    "lastModified": "2024-02-19T11:06:12.000Z",
+    "createdAt": "2022-03-02T23:29:04.000Z",
+    "tags": [
+      "transformers", "pytorch", "tf", "jax", "rust", "safetensors",
+      "bert", "fill-mask", "exbert", "en",
+      "dataset:bookcorpus", "dataset:wikipedia", "arxiv:1810.04805",
+      "license:apache-2.0", "endpoints_compatible", "region:us"
+    ]
+  },
+  {
+    "id": "google-bert/bert-base-multilingual-uncased",
+    "pipeline_tag": "fill-mask",
+    "library_name": "transformers",
+    "downloads": 3400000,
+    "likes": 161,
+    "lastModified": "2023-09-06T15:26:16.000Z",
+    "createdAt": "2022-03-02T23:29:04.000Z",
+    "tags": [
+      "transformers", "pytorch", "tf", "jax", "safetensors",
+      "bert", "fill-mask", "multilingual",
+      "license:apache-2.0", "region:us"
+    ]
+  },
+  {
+    "id": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+    "pipeline_tag": "text-classification",
+    "library_name": "transformers",
+    "downloads": 8200000,
+    "likes": 620,
+    "lastModified": "2023-12-11T09:20:00.000Z",
+    "createdAt": "2022-03-22T18:03:02.000Z",
+    "tags": [
+      "transformers", "pytorch", "tf", "rust", "onnx", "safetensors",
+      "distilbert", "text-classification", "en",
+      "dataset:sst2", "license:apache-2.0", "region:us"
+    ]
+  },
+  {
+    "id": "dbmdz/bert-large-cased-finetuned-conll03-english",
+    "pipeline_tag": "token-classification",
+    "library_name": "transformers",
+    "downloads": 1800000,
+    "likes": 98,
+    "lastModified": "2021-05-19T00:00:00.000Z",
+    "createdAt": "2021-05-19T00:00:00.000Z",
+    "tags": [
+      "transformers", "pytorch", "tf", "jax", "rust", "safetensors",
+      "bert", "token-classification", "en", "endpoints_compatible", "region:us"
+    ]
+  },
+  {
+    "id": "openai-community/gpt2",
+    "pipeline_tag": "text-generation",
+    "library_name": "transformers",
+    "downloads": 12500000,
+    "likes": 2450,
+    "lastModified": "2024-02-19T10:57:45.000Z",
+    "createdAt": "2022-03-02T23:29:04.000Z",
+    "tags": [
+      "transformers", "pytorch", "tf", "jax", "rust", "onnx", "safetensors",
+      "gpt2", "text-generation", "en",
+      "license:mit", "doi:10.57967/hf/0039", "region:us"
+    ]
+  },
+  {
+    "id": "sentence-transformers/all-MiniLM-L6-v2",
+    "pipeline_tag": "sentence-similarity",
+    "library_name": "sentence-transformers",
+    "downloads": 62000000,
+    "likes": 2890,
+    "lastModified": "2024-03-27T11:38:47.000Z",
+    "createdAt": "2021-11-30T09:26:52.000Z",
+    "tags": [
+      "sentence-transformers", "pytorch", "onnx", "safetensors",
+      "bert", "feature-extraction", "sentence-similarity", "en",
+      "license:apache-2.0", "region:us"
+    ]
+  },
+  {
+    "id": "openai/whisper-large-v3",
+    "pipeline_tag": "automatic-speech-recognition",
+    "library_name": "transformers",
+    "downloads": 4300000,
+    "likes": 2210,
+    "lastModified": "2024-01-22T17:34:01.000Z",
+    "createdAt": "2023-11-06T14:19:05.000Z",
+    "tags": [
+      "transformers", "pytorch", "jax", "safetensors",
+      "whisper", "automatic-speech-recognition", "en", "zh", "multilingual",
+      "license:apache-2.0", "region:us"
+    ]
+  },
+  {
+    "id": "camembert-base",
+    "pipeline_tag": "fill-mask",
+    "library_name": "transformers",
+    "downloads": 210000,
+    "likes": 45,
+    "lastModified": "2023-04-05T08:12:00.000Z",
+    "createdAt": "2022-03-02T23:29:04.000Z",
+    "tags": [
+      "transformers", "pytorch", "tf", "safetensors",
+      "camembert", "fill-mask", "fr",
+      "license:mit", "region:us"
+    ]
+  },
+  {
+    "id": "some-org/private-preview-model",
+    "pipeline_tag": "text-generation",
+    "library_name": "transformers",
+    "downloads": 3200,
+    "likes": 4,
+    "lastModified": "2024-04-01T00:00:00.000Z",
+    "createdAt": "2024-04-01T00:00:00.000Z",
+    "tags": ["transformers", "pytorch", "text-generation", "region:us"]
+  },
+  {
+    "id": "legacy/no-tags-model",
+    "pipeline_tag": "text-classification",
+    "downloads": 500,
+    "likes": 1,
+    "lastModified": "2020-01-01T00:00:00.000Z",
+    "createdAt": "2020-01-01T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "name": "hf-model-scout",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static web app to search, filter, and shortlist Hugging Face models.",
+  "scripts": {
+    "test": "node --test tests/filter-sort.test.js"
+  }
+}

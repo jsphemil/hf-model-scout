@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HF Model Scout</title>
+  <meta name="description" content="Search, filter, and shortlist Hugging Face models." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>HF Model Scout</h1>
+    <p class="tagline">Search the Hugging Face Hub, filter, and build a shortlist.</p>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Search and filters">
+      <div class="control-row">
+        <label class="visually-hidden" for="search-input">Search models</label>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Search models (e.g. bert, llama, whisper)…"
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="control-row control-grid">
+        <div class="field">
+          <label for="task-select">Task</label>
+          <select id="task-select">
+            <option value="">All tasks</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="language-select">Language</label>
+          <select id="language-select">
+            <option value="all">All languages</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="license-select">License</label>
+          <select id="license-select">
+            <option value="all">All licenses</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="sort-select">Sort by</label>
+          <select id="sort-select">
+            <option value="downloads">Downloads</option>
+            <option value="likes">Likes</option>
+            <option value="updated">Recently updated</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="control-row">
+        <label for="downloads-slider">
+          Minimum downloads: <span id="downloads-value">0</span>
+        </label>
+        <input
+          id="downloads-slider"
+          type="range"
+          min="0"
+          max="6"
+          step="1"
+          value="0"
+        />
+      </div>
+    </section>
+
+    <section id="status-region" class="status-region" aria-live="polite">
+      <p id="loading-state" class="status loading hidden">Loading models…</p>
+      <p id="error-state" class="status error hidden"></p>
+      <p id="empty-state" class="status empty hidden">No models found. Try a different search or fewer filters.</p>
+    </section>
+
+    <section aria-label="Search results">
+      <ul id="results-list" class="card-grid"></ul>
+    </section>
+
+    <aside class="shortlist-panel" aria-label="Shortlist">
+      <div class="shortlist-header">
+        <h2>Shortlist <span id="shortlist-count">(0)</span></h2>
+        <div class="shortlist-actions">
+          <button id="copy-markdown-btn" type="button">Copy as Markdown</button>
+          <button id="compare-btn" type="button" disabled>Compare</button>
+          <button id="clear-shortlist-btn" type="button" class="secondary">Clear</button>
+        </div>
+      </div>
+      <p id="shortlist-empty" class="status empty">Star a model to add it here.</p>
+      <ul id="shortlist-list" class="shortlist-list"></ul>
+    </aside>
+  </main>
+
+  <div id="compare-modal" class="modal hidden" role="dialog" aria-modal="true" aria-label="Compare models">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Compare models</h2>
+        <button id="close-compare-btn" type="button" class="secondary" aria-label="Close compare view">✕</button>
+      </div>
+      <div id="compare-table-wrap"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden" role="status"></div>
+
+  <footer class="app-footer">
+    <p>
+      Data from the <a href="https://huggingface.co/docs/hub/api" target="_blank" rel="noopener">Hugging Face Hub API</a>.
+      Not affiliated with Hugging Face.
+    </p>
+  </footer>
+
+  <script src="filters.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
